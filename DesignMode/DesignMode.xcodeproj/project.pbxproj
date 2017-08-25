@@ -111,9 +111,9 @@
 			isa = PBXGroup;
 			children = (
 				1562D7331F4E7C940083777F /* DesignMode */,
-				1562D7401F4E7CC70083777F /* Template Method */,
-				15F8C85F1F4ED17C00611A7D /* State */,
-				156C8B581F4F301700E8151D /* Composite */,
+				1562D7401F4E7CC70083777F /* Template Method_1 */,
+				15F8C85F1F4ED17C00611A7D /* State_2 */,
+				156C8B581F4F301700E8151D /* Composite_3 */,
 				1562D7321F4E7C940083777F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 			path = DesignMode;
 			sourceTree = "<group>";
 		};
-		1562D7401F4E7CC70083777F /* Template Method */ = {
+		1562D7401F4E7CC70083777F /* Template Method_1 */ = {
 			isa = PBXGroup;
 			children = (
 				1562D7411F4E7CC70083777F /* main.m */,
@@ -147,10 +147,11 @@
 				15E7E1901F4E942B00243C5A /* TemplateSub.m */,
 				15E7E18B1F4E92D500243C5A /* TemplateMethod.h */,
 			);
+			name = "Template Method_1";
 			path = "Template Method";
 			sourceTree = "<group>";
 		};
-		156C8B581F4F301700E8151D /* Composite */ = {
+		156C8B581F4F301700E8151D /* Composite_3 */ = {
 			isa = PBXGroup;
 			children = (
 				156C8B591F4F301700E8151D /* main.m */,
@@ -158,15 +159,17 @@
 				15AE775B1F4FC9480097852D /* LogicElement.m */,
 				15AE77591F4FC5890097852D /* Composite.h */,
 			);
+			name = Composite_3;
 			path = Composite;
 			sourceTree = "<group>";
 		};
-		15F8C85F1F4ED17C00611A7D /* State */ = {
+		15F8C85F1F4ED17C00611A7D /* State_2 */ = {
 			isa = PBXGroup;
 			children = (
 				15F8C8601F4ED17D00611A7D /* main.m */,
 				15F8C8651F4ED18C00611A7D /* stateHeader.h */,
 			);
+			name = State_2;
 			path = State;
 			sourceTree = "<group>";
 		};
