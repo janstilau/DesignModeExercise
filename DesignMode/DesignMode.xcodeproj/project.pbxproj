@@ -10,6 +10,7 @@
 		1562D7351F4E7C940083777F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1562D7341F4E7C940083777F /* main.m */; };
 		1562D7421F4E7CC70083777F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1562D7411F4E7CC70083777F /* main.m */; };
 		156C8B5A1F4F301700E8151D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 156C8B591F4F301700E8151D /* main.m */; };
+		15AE775C1F4FC9480097852D /* LogicElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 15AE775B1F4FC9480097852D /* LogicElement.m */; };
 		15E7E18E1F4E935400243C5A /* TemplateSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E7E18D1F4E935400243C5A /* TemplateSuper.m */; };
 		15E7E1911F4E942B00243C5A /* TemplateSub.m in Sources */ = {isa = PBXBuildFile; fileRef = 15E7E1901F4E942B00243C5A /* TemplateSub.m */; };
 		15F8C8611F4ED17D00611A7D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C8601F4ED17D00611A7D /* main.m */; };
@@ -61,6 +62,9 @@
 		1562D7411F4E7CC70083777F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		156C8B571F4F301700E8151D /* Composite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Composite; sourceTree = BUILT_PRODUCTS_DIR; };
 		156C8B591F4F301700E8151D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15AE77591F4FC5890097852D /* Composite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Composite.h; sourceTree = "<group>"; };
+		15AE775A1F4FC9480097852D /* LogicElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogicElement.h; sourceTree = "<group>"; };
+		15AE775B1F4FC9480097852D /* LogicElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogicElement.m; sourceTree = "<group>"; };
 		15E7E18B1F4E92D500243C5A /* TemplateMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TemplateMethod.h; sourceTree = "<group>"; };
 		15E7E18C1F4E935400243C5A /* TemplateSuper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateSuper.h; sourceTree = "<group>"; };
 		15E7E18D1F4E935400243C5A /* TemplateSuper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateSuper.m; sourceTree = "<group>"; };
@@ -150,6 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				156C8B591F4F301700E8151D /* main.m */,
+				15AE775A1F4FC9480097852D /* LogicElement.h */,
+				15AE775B1F4FC9480097852D /* LogicElement.m */,
+				15AE77591F4FC5890097852D /* Composite.h */,
 			);
 			path = Composite;
 			sourceTree = "<group>";
@@ -309,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				156C8B5A1F4F301700E8151D /* main.m in Sources */,
+				15AE775C1F4FC9480097852D /* LogicElement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +521,7 @@
 				156C8B5C1F4F301700E8151D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15F8C8641F4ED17D00611A7D /* Build configuration list for PBXNativeTarget "State" */ = {
 			isa = XCConfigurationList;
