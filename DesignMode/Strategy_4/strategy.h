@@ -18,9 +18,6 @@
  策略模式和状态模式一样,都是解构代码.把原本需要if,switch判断的代码,从一个地方,分到了各个子类之中.还需不需要switch呢.有的时候是
  需要的,就是根据switch来赋值策略成员变量.计算的规则则封装在各个类中了.
  
- 策略模式和状态模式的句别.
- http://www.ciaoshen.com/java/design%20pattern/2016/06/30/strategyStatePattern.html
- 
  
  */
 
