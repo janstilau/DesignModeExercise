@@ -24,10 +24,6 @@
  是可以添加子控件的.而在LogicElement里面,aciton虽然数量多,但是类的种类来看,需要管理child的类型数量占了绝大部分.
  如果想要只在composite里面管理child,可以component里面写一个getComposite的接口,primitive返回null,只有composite返回
  this,这样,算是一个类型识别的表示.
- 
- 
- 
- 
  */
 
 
