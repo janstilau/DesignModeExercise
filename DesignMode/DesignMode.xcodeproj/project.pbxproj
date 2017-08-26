@@ -211,12 +211,13 @@
 			path = Iterator;
 			sourceTree = "<group>";
 		};
-		152D89261F516AD600EAA70C /* Chain_Responsibility */ = {
+		152D89261F516AD600EAA70C /* Chain_Responsibility_7 */ = {
 			isa = PBXGroup;
 			children = (
 				152D89271F516AD600EAA70C /* main.m */,
 				152D892C1F5179ED00EAA70C /* ChainOfResponsibility.h */,
 			);
+			name = Chain_Responsibility_7;
 			path = Chain_Responsibility;
 			sourceTree = "<group>";
 		};
@@ -230,7 +231,7 @@
 				15AE77621F4FF43A0097852D /* Strategy_4 */,
 				158CFA6D1F50458800615902 /* Singleton_5 */,
 				152D89111F5149C000EAA70C /* Iterator_6 */,
-				152D89261F516AD600EAA70C /* Chain_Responsibility */,
+				152D89261F516AD600EAA70C /* Chain_Responsibility_7 */,
 				1562D7321F4E7C940083777F /* Products */,
 			);
 			sourceTree = "<group>";
