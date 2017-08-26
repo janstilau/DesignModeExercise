@@ -30,6 +30,10 @@
     
     
 }
+- (IBAction)click:(UIButton *)sender {
+    
+    
+}
 
 - (void)catchNotifi:(NSNotification *)noti {
     NSLog(@"%@ _catch_1", noti);
