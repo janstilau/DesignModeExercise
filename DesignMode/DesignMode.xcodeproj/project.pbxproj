@@ -334,7 +334,7 @@
 				152D89111F5149C000EAA70C /* Iterator_6 */,
 				152D89261F516AD600EAA70C /* Chain_Responsibility_7 */,
 				152D895B1F5191FD00EAA70C /* SeekUIKitTests */,
-				1597C30A1F52AFBC001AFBD2 /* SelfObserver */,
+				1597C30A1F52AFBC001AFBD2 /* SelfObserver_8 */,
 				1562D7321F4E7C940083777F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -401,7 +401,7 @@
 			path = Singleton;
 			sourceTree = "<group>";
 		};
-		1597C30A1F52AFBC001AFBD2 /* SelfObserver */ = {
+		1597C30A1F52AFBC001AFBD2 /* SelfObserver_8 */ = {
 			isa = PBXGroup;
 			children = (
 				1597C3131F52AFF7001AFBD2 /* Observer.h */,
@@ -409,6 +409,7 @@
 				1597C3101F52AFCA001AFBD2 /* CustomButton.h */,
 				1597C3111F52AFCA001AFBD2 /* CustomButton.m */,
 			);
+			name = SelfObserver_8;
 			path = SelfObserver;
 			sourceTree = "<group>";
 		};
