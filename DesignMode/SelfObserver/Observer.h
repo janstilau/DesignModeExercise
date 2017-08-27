@@ -29,6 +29,15 @@
  This problem is aggravated by the fact that the simple update protocol provides no details on what changed in the subject. Without additional protocol to help observers discover what changed, they may be forced to work hard to deduce the changes.
 
  
+ // btn 的observer 实现了.简单说一下notificationCenter的思路
+  NSDictionary<NSString, NSArray<NSDictionary<NSString *, id>>> 可以用来做数据的存储.因为好像center里面会有强引用
+ 这里也就用Dictionary了.
+ NSString的键,是在addObserver:action:forNotification:obj 的时候,observer,action,构成类面的作为值的
+ dictionary,提前定义常量key,MyNotificationObserver,MyNotificationAction用为key.而后面的
+ NotificationName 和 NotificationPoster 可以用 name 和 poter的地址构建出一个作为外面大diction的key.如果
+ 没有object,就单用NotificaitonName做eky
+ 这样,在postNotificaiton的时候,就可以构建出一个唯一的key来了.然后这个唯一的key对应的array,里面存储了observer和aciton的信息.如果没有obj,就单用notificaitonName 做key.实验证明了,一个observer,添加同一个notificaitonName, 一个指定了obj,一个没有指定,发送一次notificaiotn,observer会调用两次方法.
+ 
  
  */
 
