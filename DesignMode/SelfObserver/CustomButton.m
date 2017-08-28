@@ -13,7 +13,7 @@
 - (instancetype)init {
     self = [super init];
     if(self) {
-        _cache = [NSMapTable strongToStrongObjectsMapTable];
+        _cache = [[NSMutableDictionary alloc] init];
     }
     return self;
 }

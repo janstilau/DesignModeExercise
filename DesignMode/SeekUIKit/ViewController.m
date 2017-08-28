@@ -23,6 +23,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(catchNotifi_2:) name:@"lalala" object:self];
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:@"lalala" object:self];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"1" object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"2" object:nil userInfo:nil];
     
     UIButton *btn;
     [btn addTarget:self action:@selector(hehe) forControlEvents:UIControlEventAllEvents];

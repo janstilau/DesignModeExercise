@@ -19,7 +19,6 @@
 		152D894D1F5191FD00EAA70C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152D894B1F5191FD00EAA70C /* Main.storyboard */; };
 		152D894F1F5191FD00EAA70C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152D894E1F5191FD00EAA70C /* Assets.xcassets */; };
 		152D89521F5191FD00EAA70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152D89501F5191FD00EAA70C /* LaunchScreen.storyboard */; };
-		152D895D1F5191FD00EAA70C /* SeekUIKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 152D895C1F5191FD00EAA70C /* SeekUIKitTests.m */; };
 		1562D7351F4E7C940083777F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1562D7341F4E7C940083777F /* main.m */; };
 		1562D7421F4E7CC70083777F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1562D7411F4E7CC70083777F /* main.m */; };
 		156C8B5A1F4F301700E8151D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 156C8B591F4F301700E8151D /* main.m */; };
@@ -150,8 +149,6 @@
 		152D89511F5191FD00EAA70C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		152D89531F5191FD00EAA70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		152D89581F5191FD00EAA70C /* SeekUIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeekUIKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		152D895C1F5191FD00EAA70C /* SeekUIKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeekUIKitTests.m; sourceTree = "<group>"; };
-		152D895E1F5191FD00EAA70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1562D7311F4E7C940083777F /* DesignMode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DesignMode; sourceTree = BUILT_PRODUCTS_DIR; };
 		1562D7341F4E7C940083777F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1562D73F1F4E7CC60083777F /* Template Method */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Template Method"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -312,15 +309,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		152D895B1F5191FD00EAA70C /* SeekUIKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				152D895C1F5191FD00EAA70C /* SeekUIKitTests.m */,
-				152D895E1F5191FD00EAA70C /* Info.plist */,
-			);
-			path = SeekUIKitTests;
-			sourceTree = "<group>";
-		};
 		1562D7281F4E7C940083777F = {
 			isa = PBXGroup;
 			children = (
@@ -333,7 +321,6 @@
 				158CFA6D1F50458800615902 /* Singleton_5 */,
 				152D89111F5149C000EAA70C /* Iterator_6 */,
 				152D89261F516AD600EAA70C /* Chain_Responsibility_7 */,
-				152D895B1F5191FD00EAA70C /* SeekUIKitTests */,
 				1597C30A1F52AFBC001AFBD2 /* SelfObserver_8 */,
 				1562D7321F4E7C940083777F /* Products */,
 			);
@@ -771,7 +758,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152D895D1F5191FD00EAA70C /* SeekUIKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1257,6 +1243,7 @@
 				1597C30F1F52AFBC001AFBD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		15AE77651F4FF43A0097852D /* Build configuration list for PBXNativeTarget "Strategy_4" */ = {
 			isa = XCConfigurationList;

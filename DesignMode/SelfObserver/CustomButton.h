@@ -10,7 +10,7 @@
 
 @interface CustomButton : NSObject
 
-@property (nonatomic, strong) NSMapTable *cache;
+@property (nonatomic, strong) NSMutableDictionary *cache;
 
 - (void)addTarget:(id)target aciton:(NSString *)action forEvent:(int)event;
 - (void)trigger:(int) evnt;
