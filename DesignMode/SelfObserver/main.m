@@ -118,32 +118,30 @@
     if(name) { [key appendString:name]; }
     
     NSMutableArray<NSString *> *deleteArray = [[NSMutableArray alloc] init];
-    if (key.length) {
-        for (NSString *item in keyArray) {
+    for (NSString *item in keyArray) {
+        if (key.length) {
             if ([item containsString:key]) {
                 [deleteArray addObject:item];
             }
+        } else {
+            [deleteArray addObject:item];
         }
-    } else {
-        deleteArray = keyArray;
     }
     
     for (NSString *item in deleteArray) {
         NSMapTable<id, NSMutableArray<NSString *>*> *map = _cache[item];
-        if (name.length) {
-            NSMutableArray<NSString *> *array = [map objectForKey:observer];
-            [array removeObject:name];
-            if (!array.count) {
-                NSMutableArray<NSString *> *keys = [_cache objectForKey:observerAdd];
-                [keys removeObject:item];
-            }
-        } else {
-            [map removeObjectForKey:observer];
-            NSMutableArray<NSString *> *keys = [_cache objectForKey:observerAdd];
-            [keys removeObject:item];
+        [map removeObjectForKey:observer];
+        if (![map count]) {
+            [_cache removeObjectForKey:item];
         }
     }
     
+    for (NSString *item in deleteArray) {
+        [keyArray removeObject:item];
+    }
+    if (!keyArray.count) {
+        [_objRegister removeObjectForKey:observerAdd];
+    }
 }
 
 @end
@@ -175,7 +173,7 @@ int main(int argc, const char * argv[]) {
         [center addObserver:observer selector:@"btnClick:" name:@"TempNotification" object:nil];
         NSLog(@"%@", center.cache);
         NSLog(@"%@", center.objRegister);
-        [center removeObserver:observer name:nil object:poster];
+        [center removeObserver:observer name:nil object:nil];
         NSLog(@"%@", center.cache);
         NSLog(@"%@", center.objRegister);
 
