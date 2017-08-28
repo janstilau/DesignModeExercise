@@ -113,8 +113,37 @@
     // 这里有设计问题,按照理解,可以指给出name,也可以只给出obj.只给出name,应该去除observer对于name的监听,不管poster是谁.
     // 但是现在的name,obj必须要一起给出才行.可以用contains的办法,但是这样,如果一个name就是contains了另一个name,那就有问题了.
     
-    NSString *key = [NSString stringWithFormat:@"%p%@", obj, name];
-    if([key hasPrefix:@"0x0"]) { key = [key substringFromIndex:[@"0x0" length]]; };
+    NSMutableString *key = [[NSString stringWithFormat:@"%p", obj] mutableCopy];
+    if([key hasPrefix:@"0x0"]) { [key deleteCharactersInRange:NSMakeRange(0, 3)]; };
+    if(name) { [key appendString:name]; }
+    
+    NSMutableArray<NSString *> *deleteArray = [[NSMutableArray alloc] init];
+    if (key.length) {
+        for (NSString *item in keyArray) {
+            if ([item containsString:key]) {
+                [deleteArray addObject:item];
+            }
+        }
+    } else {
+        deleteArray = keyArray;
+    }
+    
+    for (NSString *item in deleteArray) {
+        NSMapTable<id, NSMutableArray<NSString *>*> *map = _cache[item];
+        if (name.length) {
+            NSMutableArray<NSString *> *array = [map objectForKey:observer];
+            [array removeObject:name];
+            if (!array.count) {
+                NSMutableArray<NSString *> *keys = [_cache objectForKey:observerAdd];
+                [keys removeObject:item];
+            }
+        } else {
+            [map removeObjectForKey:observer];
+            NSMutableArray<NSString *> *keys = [_cache objectForKey:observerAdd];
+            [keys removeObject:item];
+        }
+    }
+    
 }
 
 @end
@@ -146,6 +175,12 @@ int main(int argc, const char * argv[]) {
         [center addObserver:observer selector:@"btnClick:" name:@"TempNotification" object:nil];
         NSLog(@"%@", center.cache);
         NSLog(@"%@", center.objRegister);
+        [center removeObserver:observer name:nil object:poster];
+        NSLog(@"%@", center.cache);
+        NSLog(@"%@", center.objRegister);
+
+//        NSLog(@"%@", center.cache);
+//        NSLog(@"%@", center.objRegister);
 //        NSDictionary *dict = @{ @"1" : @"1value",};
 //        [center postNotificationName:@"TempNotification" object:poster userInfo:dict];
         
